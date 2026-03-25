@@ -16,7 +16,7 @@ const router = express.Router();
 
 router.post("/signup", signup);
 router.get("/check-username", checkUsername);
-router.post("/check-email", checkEmail);
+router.get("/check-email", checkEmail);
 router.post("/send-code", sendCode);
 router.post("/verify-code", verifyCode);
 router.post("/login", login);

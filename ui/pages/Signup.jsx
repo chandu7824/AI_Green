@@ -308,7 +308,7 @@ function Signup() {
                     <div className="flex flex-col">
                       <button
                         type="button"
-                        className="btn w-[80%] ml-[20px] cursor-pointer"
+                        className="btn w-[80%] h-12 cursor-pointer rounded-lg"
                         onClick={() =>
                           sendVerificationCode(
                             values.firstName,
@@ -368,7 +368,7 @@ function Signup() {
                         <div>
                           <button
                             type="button"
-                            className="btn w-[80%] ml-[20px]"
+                            className="btn w-[80%] h-12 rounded-lg"
                             onClick={() =>
                               verifyCode(values.email, values.code)
                             }
@@ -444,7 +444,7 @@ function Signup() {
 
                     <button
                       type="submit"
-                      className="relative top-[20px] btn btn-primary w-[80%]"
+                      className="relative top-[20px] h-12 rounded-lg btn btn-primary w-[80%]"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Creating...." : "Create Account"}
